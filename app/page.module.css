@@ -1,9 +1,9 @@
 .main {
   background-color: var(--yellow);
   width: 100vw;
-  height: 100vh;
   display: grid;
   place-items: center;
+  padding: 2rem 0;
 }
 .title {
   text-align: center;
@@ -37,4 +37,7 @@
   border-radius: 20px;
   box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.2);
   border: 2px solid var(--black);
+}
+.content h3 {
+  color: var(--black);
 }

@@ -30,7 +30,7 @@ export default function Home() {
         <InputMono setLetters={setLetters} setNumbers={setNumbers}/>
         <Select setCity={setCity}/>
         <Plate letters={letters} numbers={numbers} city={city}/>
-        <h3>Pico y placa para la ciudad de: {city}</h3>
+        <h3>Pico y placa para la ciudad de {city}</h3>
       </div>
     </main>
   )
