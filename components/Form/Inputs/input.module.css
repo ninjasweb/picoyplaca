@@ -1,0 +1,10 @@
+.input {
+  background: linear-gradient(to left, #ccc 1px, transparent 0);
+  background-size: 100px 1px;
+  width: 300px; 
+  font-size: 30px;
+  letter-spacing: 80px;
+  text-indent: 5px;
+  text-transform: uppercase;
+  outline: none;
+}
