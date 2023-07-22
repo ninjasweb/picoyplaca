@@ -1,23 +1,27 @@
 import styles from './input.module.css'
 
-const InputMono = ({setLetters, setNumbers, setCity}) => {
+const InputMono = ({setLetters, setNumbers}) => {
   return (
-    <div>
-      <label>INGRESA TU PLACA</label>
-      {/* Placa */}
-      <div>
+    <div className={styles.main}>
+      <h2>INGRESA TU PLACA</h2>
+      <div className={styles.inputs}>
         {/* Letras */}
-        <input 
-          onChange={(e)=>setLetters(e.target.value.toUpperCase().slice(0, 3))} 
-          className={styles.input} type="text" maxLength={3} />
-          {/* Números */}
-        <input 
-          onChange={(e)=>setNumbers(e.target.value.toUpperCase().slice(0, 3))} 
-          className={styles.input} type="text" maxLength={3} />
+        <div className={styles.row}>
+          <input
+            placeholder='ABC'
+            onChange={(e)=>setLetters(e.target.value.toUpperCase().slice(0, 3))} 
+            className={styles.input} type="text" maxLength={3} id="letters" />
+          <label htmlFor='letters'>Ingresa las letras</label>
+        </div>
+        {/* Números */}
+        <div className={styles.row}>
+          <input
+            placeholder='123'
+            onChange={(e)=>setNumbers(e.target.value.toUpperCase().slice(0, 3))} 
+            className={styles.input} type="text" maxLength={3} id="numbers" />
+          <label htmlFor='numbers'>Ingresa los números</label>
+        </div>
       </div>
-        <input
-          onChange={(e)=>setCity(e.target.value.toUpperCase())} 
-          type='text' />
     </div>
    )
 }

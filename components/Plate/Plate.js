@@ -12,6 +12,7 @@ const Plate = ({letters, numbers, city}) => {
       </div>
       <div className={styles.city}>
         <p>{city}</p>
+        <span>Ciudad actual</span>
       </div>
       <div className={styles.marks}>
         <span></span>

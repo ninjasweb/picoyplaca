@@ -1,3 +1,10 @@
+.main {
+  border: 1px solid red;
+}
+.main h2 {
+  text-align: center;
+  color: #fff;
+}
 .input {
   background: linear-gradient(to left, #ccc 1px, transparent 0);
   background-size: 100px 1px;
@@ -7,4 +14,18 @@
   text-indent: 5px;
   text-transform: uppercase;
   outline: none;
+  color: #fff;
+}
+.inputs {
+  display: flex;
+  gap: 1rem;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+.row label {
+  font-size: 0.9rem;
+  color: #fff;
 }
