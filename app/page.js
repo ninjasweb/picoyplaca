@@ -7,6 +7,8 @@ import { useState } from 'react'
 import Select from '@/components/Form/Inputs/Select'
 import useCurrentDay from '@/hooks/useCurrentDay'
 import useCurrentDate from '@/hooks/useCurrentDate'
+import Image from 'next/image'
+import useCurrentDayIcon from '@/hooks/useCurrentDayIcon'
 
 export default function Home() {
   const [letters, setLetters] = useState('ABC')
@@ -14,11 +16,15 @@ export default function Home() {
   const [city, setCity] = useState('Bogotá')
   const currentDay = useCurrentDay()
   const currentDate = useCurrentDate()
+  const currentIcon = useCurrentDayIcon()
   return (
     <main className={styles.main}>
       <div className={styles.title}>
         <h1>Pico y placa hoy: {currentDay}</h1>
-        <h2>{currentDate}</h2>
+        <div className={styles.date}>
+          <Image className={styles.icon} src={currentIcon} width={40} height={40} alt=''/> 
+          <h2>{currentDate}</h2>
+        </div>
       </div>
       <div className={styles.content}>
         <InputMono setLetters={setLetters} setNumbers={setNumbers}/>
