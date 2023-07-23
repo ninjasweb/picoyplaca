@@ -42,3 +42,20 @@
   color: var(--black);
   margin-top: 2rem;
 }
+.badge > div {
+  color: var(--white);
+  width: max-content;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.badge .success {
+  background-color: rgb(54, 177, 105);
+}
+.badge .alert {
+  background-color: #fba411;
+}
