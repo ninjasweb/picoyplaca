@@ -12,15 +12,25 @@
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 500px){
+  .plate {
+    width: 100%;
+  }
+}
 
 .id {
   display: flex;
   align-items: center;
   z-index: 2;
+  font-size: 4.5rem;
+}
+@media (max-width: 500px){
+  .id {
+    font-size: 3.2rem;
+  }
 }
 
 .id > div {
-  font-size: 75px;
   text-transform: uppercase;
   color: #000;
   margin: 0 10px;

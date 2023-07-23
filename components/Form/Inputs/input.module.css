@@ -23,6 +23,23 @@
   padding: 5px;
   border-radius: 10px;
 }
+@media (max-width: 380px){
+  .input {
+  background: linear-gradient(to left, #ccc 1px, transparent 0);
+  background-size: 80px 1px;
+  width: 240px;
+  font-size: 20px;
+  letter-spacing: 65px;
+  text-indent: 1px;
+  text-transform: uppercase;
+  outline: none;
+  background-color: var(--yellow);
+  color: var(--black);
+  border: 0.5px solid var(--black);
+  padding: 2px;
+  border-radius: 5px;
+  } 
+}
 .inputs {
   display: flex;
   gap: 1rem;
@@ -40,6 +57,17 @@
 .row label {
   font-size: 0.9rem;
   color: var(--black);
+}
+@media (max-width: 380px){
+  .row {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .row label {
+    text-align: center;
+  }
 }
 .error {
   color: red;

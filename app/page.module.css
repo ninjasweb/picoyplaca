@@ -45,6 +45,11 @@
     width: 90%;
   }
 }
+@media (max-width: 500px){
+  .content {
+    padding: 1rem;
+  }
+}
 .content h3 {
   color: var(--black);
   margin-top: 2rem;
