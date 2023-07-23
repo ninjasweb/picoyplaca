@@ -5,7 +5,6 @@ const Select = ({setCity}) => {
     'Bogotá',
     'Medellín',
     'Cali',
-    'Barranquilla',
     'Ibagué'
   ]
   const handleChange = (e) => {

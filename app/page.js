@@ -10,15 +10,16 @@ import Image from 'next/image'
 import useCurrentDayIcon from '@/hooks/useCurrentDayIcon'
 import Badge from '@/components/badge'
 import HorizontalBanner from '@/components/Ads/HorizontalBanner'
-
+import WeekTable from '@/components/Tables/WeekTable'
 
 export default function Home() {
   const [letters, setLetters] = useState('ABC')
   const [numbers, setNumbers] = useState('123')
-  const [city, setCity] = useState('Bogotá D.C')
+  const [city, setCity] = useState('Bogotá')
   const currentDay = useCurrentDay()
   const currentDate = useCurrentDate()
   const currentIcon = useCurrentDayIcon()
+  const lastNumer = numbers[numbers.length -1]
   return (
     <main className={styles.main}>
       <div className={styles.title}>
@@ -34,6 +35,8 @@ export default function Home() {
         <Select setCity={setCity}/>
         <Plate letters={letters} numbers={numbers} city={city}/>
         <h3>Pico y placa para la ciudad de {city}</h3>
+        <p>Carros particulares</p>
+        <WeekTable lastNumer={lastNumer} city={city}/>
       </div>
       <HorizontalBanner/>
     </main>

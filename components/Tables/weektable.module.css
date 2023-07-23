@@ -1,0 +1,17 @@
+.table {
+  margin: 1rem 0;
+}
+
+.table thead {
+  background-color: var(--black);
+  color: var(--yellow);
+}
+.table thead tr th {
+  padding: 1rem;
+}
+.table tbody tr td {
+  padding: 10px 5px;
+}
+.restricted {
+  background-color: orange;
+}
