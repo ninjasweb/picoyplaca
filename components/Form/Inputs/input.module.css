@@ -33,3 +33,10 @@
   font-size: 0.9rem;
   color: var(--black);
 }
+.error {
+  color: red;
+  text-align: center;
+}
+.errorBorder {
+  border-color: red;
+}
