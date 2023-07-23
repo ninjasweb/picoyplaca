@@ -12,17 +12,21 @@ const Select = ({setCity}) => {
     const selectedCity = e.target.value
     setCity(selectedCity)
   }
-  return ( 
-    <select className={styles.select} onChange={handleChange}>
-      <option value="">Seleccione una ciudad</option>
-      {cities.map((city, index)=>{
-        return (
-          <option key={index} value={city}>
-            {city}
-          </option>
-        )
-      })}
-    </select>
+  return (
+    <>
+      <select id="city" className={styles.select} onChange={handleChange}>
+        <option value="">Selecciona una ciudad</option>
+        {cities.map((city, index)=>{
+          return (
+            <option key={index} value={city}>
+              {city}
+            </option>
+          )
+        })}
+      </select>
+      <label htmlFor='city' className={styles.label}>Ciudad actual o que visitas</label>
+    </>
+    
    )
 }
  

@@ -8,8 +8,9 @@ import useCurrentDay from '@/hooks/useCurrentDay'
 import useCurrentDate from '@/hooks/useCurrentDate'
 import Image from 'next/image'
 import useCurrentDayIcon from '@/hooks/useCurrentDayIcon'
-import successIcon from '@/assets/success.svg'
-import alertIcon from '@/assets/alert.svg'
+import Badge from '@/components/badge'
+import HorizontalBanner from '@/components/Ads/HorizontalBanner'
+
 
 export default function Home() {
   const [letters, setLetters] = useState('ABC')
@@ -22,16 +23,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.title}>
         <h1>Pico y placa hoy: {currentDay}</h1>
-        <div className={styles.badge}>
-          {currentDay === 'Sábado' || currentDay === 'Domingo'  ? 
-            <div className={styles.success}>
-              <Image style={{marginRight: '10px'}} src={successIcon} width={30} height={30} alt='success'/> No Aplica hoy
-            </div> : 
-            <div className={styles.alert}>
-              <Image style={{marginRight: '10px'}} src={alertIcon} width={30} height={30} alt='alert'/> Si Aplica hoy
-            </div>
-          }
-        </div>
+        <Badge/>
         <div className={styles.date}>
           <Image className={styles.icon} src={currentIcon} width={40} height={40} alt=''/> 
           <h2>{currentDate}</h2>
@@ -43,6 +35,7 @@ export default function Home() {
         <Plate letters={letters} numbers={numbers} city={city}/>
         <h3>Pico y placa para la ciudad de {city}</h3>
       </div>
+      <HorizontalBanner/>
     </main>
   )
 }

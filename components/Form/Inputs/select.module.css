@@ -1,5 +1,4 @@
 .select {
-  margin: 1rem 0;
   height: 50px;
   font-size: 20px;
   padding: 10px;
@@ -7,4 +6,8 @@
   color: var(--yellow);
   border: none;
   border-radius: 10px;
+}
+.label {
+  margin: 5px 0 2rem 0;
+  color: var(--black);
 }
