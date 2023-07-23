@@ -1,0 +1,18 @@
+.main {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+.content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.content h2 {
+  color: var(--black);
+  margin: 2rem 0 1rem 0;
+  font-size: 1.7rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}

@@ -13,7 +13,7 @@ import useCurrentDayIcon from '@/hooks/useCurrentDayIcon'
 export default function Home() {
   const [letters, setLetters] = useState('ABC')
   const [numbers, setNumbers] = useState('123')
-  const [city, setCity] = useState('Bogotá')
+  const [city, setCity] = useState('Bogotá D.C')
   const currentDay = useCurrentDay()
   const currentDate = useCurrentDate()
   const currentIcon = useCurrentDayIcon()
