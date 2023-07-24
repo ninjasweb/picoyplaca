@@ -1,0 +1,16 @@
+.times {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+.times h3 {
+  margin: 0 !important;
+}
+.times h3 span {
+  background-color: var(--black);
+  color: var(--yellow);
+  padding: 5px 10px;
+  border-radius: 15px;
+}

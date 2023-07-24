@@ -11,6 +11,7 @@ import useCurrentDayIcon from '@/hooks/useCurrentDayIcon'
 import Badge from '@/components/badge'
 import HorizontalBanner from '@/components/Ads/HorizontalBanner'
 import WeekTable from '@/components/Tables/WeekTable'
+import Times from '@/components/Times'
 
 export default function Home() {
   const [letters, setLetters] = useState('ABC')
@@ -36,6 +37,7 @@ export default function Home() {
         <Plate letters={letters} numbers={numbers} city={city}/>
         <h3>Pico y placa para la ciudad de {city}</h3>
         <p>Carros particulares</p>
+        <Times city={city}/>
         <WeekTable lastNumer={lastNumer} city={city}/>
       </div>
       <HorizontalBanner/>

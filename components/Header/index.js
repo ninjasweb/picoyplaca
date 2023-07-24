@@ -10,7 +10,7 @@ const Header = () => {
           <p>picoyplaca.autos</p>
         </Link>
         <Link href="/pico-y-placa-que-es">
-          <MainButton>¿Cómo funciona el Pico y Placa?</MainButton>
+          <MainButton>¿Cómo funciona?</MainButton>
         </Link>
       </div>
     </header>
