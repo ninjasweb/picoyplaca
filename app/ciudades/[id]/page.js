@@ -13,6 +13,7 @@ const City = ({ params }) => {
     { slug: 'bogota', name: 'Bogotá' },
     { slug: 'medellin', name: 'Medellín' },
     { slug: 'cali', name: 'Cali' },
+    {slug: 'armenia', name: 'Armenia'}
   ]
   const cityData = cities.find((city) => city.slug === params.id)
   const isValidCity = !!cityData

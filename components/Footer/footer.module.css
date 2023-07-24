@@ -27,14 +27,24 @@
 .menu {
   margin-bottom: 1rem;
 }
+.menu a {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 10px;
+}
+.menu a:hover {
+  background-color: var(--yellow);
+}
+.menu a:hover p {
+  color: var(--black);
+}
 .menu a p {
   color: var(--yellow);
   text-align: left;
-  margin-bottom: 0.5rem;
 }
-.menu a p:hover {
-  color: var(--white);
-}
+
 .social img {
   margin: 0 1rem;
 }

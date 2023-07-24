@@ -21,6 +21,10 @@ const Footer = () => {
     {
       url: 'cali',
       city: 'Cali'
+    },
+    {
+      url: 'armenia',
+      city: 'Armenia'
     }
   ]
   return (
