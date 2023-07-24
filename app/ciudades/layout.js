@@ -1,9 +1,5 @@
-import useCurrentDate from "@/hooks/useCurrentDate"
-
-export const currentDay = useCurrentDate()
-
 export const metadata = {
-  title: `Pico y placa hoy ${currentDay}`,
+  title: `Pico y placa hoy`,
   description: 'Conoce todo sobre el pico y placa en tu ciudad',
 }
 
