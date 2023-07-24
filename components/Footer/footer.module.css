@@ -14,3 +14,27 @@
 .footer a {
   color: var(--yellow);
 }
+.navigation {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 1rem;
+}
+.menu {
+  margin-bottom: 1rem;
+}
+.menu a p {
+  color: var(--yellow);
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+.menu a p:hover {
+  color: var(--white);
+}
+.social img {
+  margin: 0 1rem;
+}
