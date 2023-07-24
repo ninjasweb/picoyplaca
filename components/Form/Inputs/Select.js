@@ -16,7 +16,7 @@ const Select = ({setCity}) => {
   return (
     <>
       <select id="city" className={styles.select} onChange={handleChange}>
-        <option value="">Selecciona una ciudad</option>
+        <option value="Bogotá">Selecciona una ciudad</option>
         {cities.map((city, index)=>{
           return (
             <option key={index} value={city}>
