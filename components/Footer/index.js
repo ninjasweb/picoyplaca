@@ -25,6 +25,10 @@ const Footer = () => {
     {
       url: 'armenia',
       city: 'Armenia'
+    },
+    {
+      url: 'bucaramanga',
+      city: 'Bucaramanga'
     }
   ]
   return (
@@ -38,8 +42,12 @@ const Footer = () => {
           })}
         </div>
         <div className={styles.social}>
-          <Image src={WhatsappIcon} width={35} height={35} alt='whatsapp'/>
-          <Image src={MailIcon} width={40} height={40} alt='correo electrónico'/>
+          <Link href="/contacto">
+            <Image src={WhatsappIcon} width={35} height={35} alt='whatsapp'/>
+          </Link>
+          <Link href="/contacto">
+            <Image src={MailIcon} width={40} height={40} alt='correo electrónico'/>
+          </Link>
         </div>
       </div>
       <p>Todos los derechos reservados. | Powered by: <a href='https://ninjasweb.com' target='_blank'>Ninjasweb</a></p>

@@ -10,7 +10,7 @@ const Contacto = () => {
       <div className={styles.content}>
         <Image className={styles.emoji} src={Emoji} width={120} height={120} alt='emoji'/>
         <h2>¿Estás interesado en pautar con nosotros?</h2>
-        <p>Llega a miles de personas con anuncion dinámicos.</p>
+        <p>Llega a miles de personas con anuncios dinámicos.</p>
         <Link target='_blank' href="https://wa.me/573123776619">
           <div className={styles.whatsapp}>
             <Image src={WhatsappIcon} width={30} height={30} alt='Whatsapp'/>

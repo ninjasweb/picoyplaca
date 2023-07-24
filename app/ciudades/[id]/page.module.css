@@ -21,3 +21,6 @@
 .page .content h2 {
   margin-top: 2rem;
 }
+.page .content p {
+  text-align: justify;
+}

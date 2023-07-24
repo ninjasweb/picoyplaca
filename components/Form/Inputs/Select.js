@@ -6,7 +6,8 @@ const Select = ({setCity}) => {
     'Medellín',
     'Cali',
     'Ibagué',
-    'Armenia'
+    'Armenia',
+    'Bucaramanga',
   ]
   const handleChange = (e) => {
     const selectedCity = e.target.value
