@@ -1,0 +1,21 @@
+.faqs {
+  width: 100%;
+  padding: 1rem;
+}
+.single_faq {
+  border: 1px solid var(--black);
+  margin-top: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.2);
+}
+.single_faq h4 {
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 0.5rem;
+  background-color: var(--black);
+  color: var(--yellow);
+}
+.single_faq p {
+  padding: 0.5rem;
+}

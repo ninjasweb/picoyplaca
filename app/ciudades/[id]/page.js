@@ -5,17 +5,11 @@ import { useRouter } from 'next/navigation'
 import Badge from '@/components/badge';
 import WeekTable from '@/components/Tables/WeekTable';
 import Times from '@/components/Times';
+import Faqs from '@/components/Faqs';
+import { cities } from '@/data/cities';
 
 const City = ({ params }) => {
   const router = useRouter()
-  const cities = [
-    { slug: 'ibague', name: 'Ibagué' },
-    { slug: 'bogota', name: 'Bogotá' },
-    { slug: 'medellin', name: 'Medellín' },
-    { slug: 'cali', name: 'Cali' },
-    {slug: 'armenia', name: 'Armenia'},
-    {slug: 'bucaramanga', name: 'Bucaramanga'},
-  ]
   const cityData = cities.find((city) => city.slug === params.id)
   const isValidCity = !!cityData
   useEffect(() => {
@@ -39,6 +33,7 @@ const City = ({ params }) => {
         <p style={{textAlign: 'center'}}>Carros Particulares</p>
         <Times city={cityData.name}/>
         <WeekTable city={cityData.name}/>
+        <Faqs cityName={cityData.name}/>
       </div>
     </div>
     

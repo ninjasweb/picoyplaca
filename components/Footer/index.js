@@ -3,41 +3,16 @@ import styles from './footer.module.css'
 import Link from 'next/link'
 import WhatsappIcon from '@/assets/whatsapp.svg'
 import MailIcon from '@/assets/mail.svg'
+import { cities } from '@/data/cities'
 
 const Footer = () => {
-  const menuItems = [
-    {
-      url: 'bogota',
-      city: 'Bogotá',
-    },
-    {
-      url: 'ibague',
-      city: 'Ibagué'
-    },
-    {
-      url: 'medellin',
-      city: 'Medellín'
-    },
-    {
-      url: 'cali',
-      city: 'Cali'
-    },
-    {
-      url: 'armenia',
-      city: 'Armenia'
-    },
-    {
-      url: 'bucaramanga',
-      city: 'Bucaramanga'
-    }
-  ]
   return (
     <footer className={styles.footer}>
       <div className={styles.navigation}>
         <div className={styles.menu}>
-          {menuItems.map((item, index)=>{
+          {cities.map((item, index)=>{
             return(
-              <Link key={index} href={`/ciudades/${item.url}`}><p>Pico y Placa en {item.city}</p></Link>
+              <Link key={index} href={`/ciudades/${item.slug}`}><p>Pico y Placa en {item.name}</p></Link>
             )
           })}
         </div>
