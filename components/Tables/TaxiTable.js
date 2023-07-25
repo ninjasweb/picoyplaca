@@ -1,27 +1,26 @@
+import { taxiRestrictions } from '@/data/taxiRestrictions';
 import styles from './weektable.module.css'
-import { cityRestrictions } from '@/data/carsRestrictions';
 
-const WeekTable = ({ city, lastNumer }) => {
+const TaxiTable = ({ city, lastNumer }) => {
 
   // Obtener las restricciones para la ciudad actual
-  const restrictions = cityRestrictions[city] || {}
+  const restrictions = taxiRestrictions[city] || {}
 
-  const daysOfWeek = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo']
+  const daysOfWeek = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo', 'Lunes']
   
 
   const currentDate = new Date();
   // Función para obtener la cantidad de días en un mes específico
   const getDaysInMonth = (year, month) => {
     return new Date(year, month + 1, 0).getDate();
-  };
-  
+  }
 
   return (
     <table className={styles.table}>
       <thead>
         <tr>
           <th>Día de la semana</th>
-          <th>Restricciones de pico y placa: Carros particulares</th>
+          <th>Restricciones de pico y placa: Taxis</th>
         </tr>
       </thead>
       <tbody>
@@ -61,4 +60,4 @@ const WeekTable = ({ city, lastNumer }) => {
   );
 };
 
-export default WeekTable;
+export default TaxiTable;
