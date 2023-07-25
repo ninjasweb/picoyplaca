@@ -4,6 +4,7 @@
   align-items: center;
   margin-top: 1rem;
   font-size: 1.3rem;
+  text-align: center;
 }
 @media (max-width: 800px){
   .times {

@@ -78,7 +78,7 @@ const WeekTable = ({ city, lastNumer }) => {
       <thead>
         <tr>
           <th>Día de la semana</th>
-          <th>Restricciones de pico y placa</th>
+          <th>Restricciones de pico y placa: Carros particulares</th>
         </tr>
       </thead>
       <tbody>

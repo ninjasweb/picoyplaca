@@ -36,7 +36,6 @@ export default function Home() {
         <Select setCity={setCity}/>
         <Plate letters={letters} numbers={numbers} city={city}/>
         <h3>Pico y placa para la ciudad de {city}</h3>
-        <p>Carros particulares</p>
         <Times city={city}/>
         <WeekTable lastNumer={lastNumer} city={city}/>
       </div>
