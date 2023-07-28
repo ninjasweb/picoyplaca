@@ -49,8 +49,17 @@
 }
 .footer .bottom {
   display: flex;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 .footer .bottom a {
   margin: 0 1rem;
+}
+@media (max-width: 780px){
+  .footer .bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer .bottom a {
+    margin-bottom: 1rem;
+  }
 }

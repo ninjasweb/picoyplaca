@@ -1,21 +1,18 @@
 import styles from './weektable.module.css'
-import { cityRestrictions } from '@/data/carsRestrictions';
+import { carsRestrictions } from '@/data/carsRestrictions';
 
 const WeekTable = ({ city, lastNumer }) => {
 
   // Obtener las restricciones para la ciudad actual
-  const restrictions = cityRestrictions[city] || {}
+  const restrictions = carsRestrictions[city] || {}
 
   const daysOfWeek = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo']
-  
 
   const currentDate = new Date();
   // Función para obtener la cantidad de días en un mes específico
   const getDaysInMonth = (year, month) => {
     return new Date(year, month + 1, 0).getDate();
-  };
-  
-
+  }
   return (
     <table className={styles.table}>
       <thead>

@@ -12,15 +12,17 @@ import Badge from '@/components/badge'
 import HorizontalBanner from '@/components/Ads/HorizontalBanner'
 import WeekTable from '@/components/Tables/WeekTable'
 import Times from '@/components/Times'
+import { cities } from '@/data/cities'
 
 export default function Home() {
   const [letters, setLetters] = useState('ABC')
   const [numbers, setNumbers] = useState('123')
-  const [city, setCity] = useState('Bogotá')
+  const [city, setCity] = useState('bogota')
   const currentDay = useCurrentDay()
   const currentDate = useCurrentDate()
   const currentIcon = useCurrentDayIcon()
   const lastNumer = numbers[numbers.length -1]
+  const cityNames = cities.find((c) => c.slug === city)
   return (
     <main className={styles.main}>
       <div className={styles.title}>
@@ -34,8 +36,8 @@ export default function Home() {
       <div className={styles.content}>
         <InputMono setLetters={setLetters} setNumbers={setNumbers}/>
         <Select setCity={setCity}/>
-        <Plate letters={letters} numbers={numbers} city={city}/>
-        <h3>Pico y placa para la ciudad de {city}</h3>
+        <Plate letters={letters} numbers={numbers} city={cityNames.name}/>
+        <h3>Pico y placa para la ciudad de {cityNames.name}</h3>
         <Times city={city}/>
         <WeekTable lastNumer={lastNumer} city={city}/>
       </div>

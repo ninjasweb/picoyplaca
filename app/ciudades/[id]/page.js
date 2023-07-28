@@ -12,6 +12,7 @@ import TaxiTable from '@/components/Tables/TaxiTable';
 const City = ({ params }) => {
   const router = useRouter()
   const cityData = cities.find((city) => city.slug === params.id)
+  console.log(cityData)
   const isValidCity = !!cityData
   useEffect(() => {
     if (!isValidCity) {
@@ -31,10 +32,10 @@ const City = ({ params }) => {
         <h2>Pico y Placa Hoy en {cityData.name}: Restricciones y Horarios para Carros Particulares</h2>
         <p style={{marginTop: '1rem'}}>Si estás conduciendo un carro particular en la ciudad de {cityData.name}, es esencial que estés al tanto de las restricciones de tráfico conocidas como <b>Pico y Placa</b>. Estas regulaciones buscan mejorar la movilidad y reducir la congestión vehicular en la ciudad. A continuación, te proporcionamos toda la información que necesitas para evitar contratiempos y cumplir con las normativas vigentes.</p>
         <h2>Pico y placa para la ciudad de {cityData.name}</h2>
-        <Times city={cityData.name}/>
-        <WeekTable city={cityData.name}/>
-        <TaxiTable city={cityData.name}/>
-        <Faqs cityName={cityData.name}/>
+        <Times city={cityData.slug}/>
+        <WeekTable city={cityData.slug}/>
+        <TaxiTable city={cityData.slug}/>
+        <Faqs city={cityData}/>
       </div>
     </div>
     

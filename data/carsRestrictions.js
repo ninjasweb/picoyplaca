@@ -1,5 +1,5 @@
-export const cityRestrictions = {
-  Bogotá: {
+export const carsRestrictions = {
+  bogota: {
     1: [1, 2, 3, 4, 5],
     2: [6, 7, 8, 9, 0],
     3: [1, 2, 3, 4, 5],
@@ -8,7 +8,7 @@ export const cityRestrictions = {
     6: [], // No aplica para Sábado
     7: [], // No aplica para Domingo
   },
-  Ibagué: {
+  ibague: {
     1: [0,1],
     2: [2,3],
     3: [4,5],
@@ -17,7 +17,7 @@ export const cityRestrictions = {
     6: [],
     7: [],
   },
-  Medellín: {
+  medellin: {
     1: [7,1],
     2: [3,0],
     3: [4,6],
@@ -26,7 +26,7 @@ export const cityRestrictions = {
     6: [],
     7: [],
   },
-  Cali: {
+  cali: {
     1: [1,2],
     2: [3,4],
     3: [5,6],
@@ -35,7 +35,7 @@ export const cityRestrictions = {
     6: [],
     7: [],
   },
-  Armenia: {
+  armenia: {
     1: [3,4],
     2: [5,6],
     3: [7,8],
@@ -44,13 +44,22 @@ export const cityRestrictions = {
     6: [],
     7: [],
   },
-  Bucaramanga: {
+  bucaramanga: {
     1: [5,6],
     2: [7,8],
     3: [9,0],
     4: [1,2],
     5: [3,4],
     6: [5,6],
+    7: [],
+  },
+  santamarta: {
+    1: [2,3],
+    2: [4,5],
+    3: [6,7],
+    4: [8,9],
+    5: [0,1],
+    6: [],
     7: [],
   }
 }

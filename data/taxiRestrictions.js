@@ -1,5 +1,5 @@
 export const taxiRestrictions = {
-  Bogotá: {
+  bogota: {
     1: [7,8],
     2: [9,0],
     3: [1,2],
@@ -9,7 +9,7 @@ export const taxiRestrictions = {
     7: [], // No aplica para Domingo
     8: [9,0] // Lunes
   },
-  Ibagué: {
+  ibague: {
     1: [6],
     2: [7],
     3: [8],
@@ -19,7 +19,7 @@ export const taxiRestrictions = {
     7: [2],
     8: [3]
   },
-  Medellín: {
+  medellin: {
     1: [4],
     2: [0],
     3: [1],
@@ -29,7 +29,7 @@ export const taxiRestrictions = {
     7: [],
     8: [9],
   },
-  Cali: {
+  cali: {
     1: [],
     2: [],
     3: [],
@@ -39,7 +39,7 @@ export const taxiRestrictions = {
     7: [],
     8: [],
   },
-  Armenia: {
+  armenia: {
     1: [9,0],
     2: [1,2],
     3: [3,4],
@@ -49,7 +49,7 @@ export const taxiRestrictions = {
     7: [9,0],
     8: [1,2],
   },
-  Bucaramanga: {
+  bucaramanga: {
     1: [7,8],
     2: [9,0],
     3: [1,2],
@@ -58,5 +58,15 @@ export const taxiRestrictions = {
     6: [],
     7: [],
     8: [9,0],
+  },
+  santamarta: {
+    1: [7,8],
+    2: [9,0],
+    3: [1,2],
+    4: [3,4],
+    5: [7],
+    6: [8],
+    7: [],
+    8: [7,8],
   }
 }

@@ -6,13 +6,10 @@ import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
-
-
 export const metadata = {
   title: `Pico y Placa hoy`,
   description: `Conoce los horarios y restricciones para hoy.`,
 }
-
 
 export default function RootLayout({ children }) {
   return (

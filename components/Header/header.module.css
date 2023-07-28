@@ -13,6 +13,11 @@
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 800px){
+  .content {
+    padding: 0 1rem;
+  }
+}
 .content p {
   font-weight: bold;
   color: var(--black);
