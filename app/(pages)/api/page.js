@@ -18,7 +18,7 @@ const Api = () => {
     </ul>
 
     <h2>Parámetros de Solicitud</h2>
-    <p>Para obtener las restricciones de Pico y Placa de una ciudad, realiza una solicitud HTTP GET a la URL base seguida del recurso y el parámetro "city" con el nombre de la ciudad deseada:</p>
+    <p>Para obtener las restricciones de Pico y Placa de una ciudad, realiza una solicitud HTTP GET a la URL base seguida del recurso y el parámetro city con el nombre de la ciudad deseada:</p>
     <code>GET https://picoyplaca.autos/api/automoviles?city=(nommbre)</code>
 
     <h2>Respuestas del API</h2>
@@ -26,21 +26,21 @@ const Api = () => {
 
     <h3>Respuesta Exitosa (200 OK)</h3>
       <code>
-        "1": [0, 1],
-        "2": [2, 3],
-        "3": [4, 5],
-        "4": [6, 7],
-        "5": [8, 9],
-        "6": [],
-        "7": []
+        1: [0, 1],
+        2: [2, 3],
+        3: [4, 5],
+        4: [6, 7],
+        5: [8, 9],
+        6: [],
+        7: []
       </code>
     <p>La respuesta exitosa devuelve un objeto JSON con las restricciones de Pico y Placa para la ciudad solicitada. Cada día de la semana (de 1 a 7) tiene un arreglo con los últimos dígitos de las placas restringidas. Los días sin restricciones tendrán un arreglo vacío.</p>
-    <p>Por ejemplo, "1" representa el Lunes, y los valores [0, 1] indican que las placas terminadas en 0 y 1 están restringidas ese día.</p>
+    <p>Por ejemplo, 1 representa el Lunes, y los valores [0, 1] indican que las placas terminadas en 0 y 1 están restringidas ese día.</p>
 
     <h3>Respuesta de Error (404 Not Found)</h3>
     <pre>
 
-    "error": "City not found"
+    error: City not found
 
     </pre>
       <p>La respuesta de error 404 indica que la ciudad proporcionada no existe en la base de datos del API o no tiene restricciones de Pico y Placa registradas.</p>
