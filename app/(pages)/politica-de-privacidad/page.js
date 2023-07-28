@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Política de Privacidad | Pico y Placa Hoy',
+  description: 'Conoce todo sobre el pico y placa en tu ciudad',
+}
+
 const Privacy = () => {
   return ( 
     <section>

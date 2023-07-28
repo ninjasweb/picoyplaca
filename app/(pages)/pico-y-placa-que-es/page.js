@@ -1,3 +1,8 @@
+export const metadata = {
+  title: '¿Cómo funciona el Pico y Placa? | Pico y Placa Hoy',
+  description: 'Conoce todo sobre el pico y placa en tu ciudad',
+}
+
 const PicoYPlaca = () => {
   return ( 
     <>
