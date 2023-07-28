@@ -26,7 +26,11 @@ const Footer = () => {
         </div>
       </div>
       <p>Todos los derechos reservados. | Powered by: <a href='https://ninjasweb.com' target='_blank'>Ninjasweb</a></p>
-      <Link href={'/contacto'}>¿Quieres anunciarte aquí?</Link>
+      <div className={styles.bottom}>
+        <Link href={'/contacto'}>¿Quieres anunciarte aquí?</Link>
+        <Link href="/politica-de-cookies">Política de Cookies</Link>
+        <Link href="/politica-de-privacidad">Política de Privacidad</Link>
+      </div>
     </footer>
   )
 }

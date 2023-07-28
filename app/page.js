@@ -39,7 +39,7 @@ export default function Home() {
         <Times city={city}/>
         <WeekTable lastNumer={lastNumer} city={city}/>
       </div>
-      <HorizontalBanner/>
+      {/* <HorizontalBanner/> */}
     </main>
   )
 }
