@@ -1,13 +1,14 @@
 import { taxiRestrictions } from '@/data/taxiRestrictions';
 import styles from './weektable.module.css'
+import useCurrentDay from '@/hooks/useCurrentDay';
 
 const TaxiTable = ({ city, lastNumer }) => {
 
   // Obtener las restricciones para la ciudad actual
   const restrictions = taxiRestrictions[city] || {}
+  const currentDayName = useCurrentDay()
 
   const daysOfWeek = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo', 'Lunes']
-  
 
   const currentDate = new Date();
   // Función para obtener la cantidad de días en un mes específico
@@ -46,7 +47,9 @@ const TaxiTable = ({ city, lastNumer }) => {
           const monthNumber = dateForDay.getMonth() + 1;
           return(
             <tr className={isRestricted ? styles.restricted : ''} key={index}>
-              <td>{day} {dayNumber}/{monthNumber}</td>
+              <td><span style={{
+                fontWeight: day === currentDayName ? 'bold' : 'normal'
+              }}>{day} {dayNumber}/{monthNumber}</span></td>
               <td>
               {restrictions[index + 1] && restrictions[index + 1].length > 0
                 ? `Restringido para placas terminadas en ${restrictions[index + 1].join('-')}`

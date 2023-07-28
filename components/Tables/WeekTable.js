@@ -1,17 +1,19 @@
+import useCurrentDay from '@/hooks/useCurrentDay'
 import styles from './weektable.module.css'
-import { carsRestrictions } from '@/data/carsRestrictions';
+import { carsRestrictions } from '@/data/carsRestrictions'
 
 const WeekTable = ({ city, lastNumer }) => {
 
   // Obtener las restricciones para la ciudad actual
   const restrictions = carsRestrictions[city] || {}
+  const currentDayName = useCurrentDay()
 
   const daysOfWeek = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo']
 
-  const currentDate = new Date();
+  const currentDate = new Date()
   // Función para obtener la cantidad de días en un mes específico
   const getDaysInMonth = (year, month) => {
-    return new Date(year, month + 1, 0).getDate();
+    return new Date(year, month + 1, 0).getDate()
   }
   return (
     <table className={styles.table}>
@@ -44,7 +46,9 @@ const WeekTable = ({ city, lastNumer }) => {
           const monthNumber = dateForDay.getMonth() + 1;
           return(
             <tr className={isRestricted ? styles.restricted : ''} key={index}>
-              <td>{day} {dayNumber}/{monthNumber}</td>
+              <td><span style={{
+                fontWeight: day === currentDayName ? 'bold' : 'normal'
+              }}>{day} {dayNumber}/{monthNumber}</span></td>
               <td>
               {restrictions[index + 1] && restrictions[index + 1].length > 0
                 ? `Restringido para placas terminadas en ${restrictions[index + 1].join('-')}`
@@ -55,7 +59,7 @@ const WeekTable = ({ city, lastNumer }) => {
         })}
       </tbody>
     </table>
-  );
-};
+  )
+}
 
-export default WeekTable;
+export default WeekTable

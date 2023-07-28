@@ -5,5 +5,6 @@ export const cities = [
   { slug: 'cali', name: 'Cali' },
   {slug: 'armenia', name: 'Armenia'},
   {slug: 'bucaramanga', name: 'Bucaramanga'},
-  {slug: 'santamarta', name: 'Santa Marta'}
+  {slug: 'santamarta', name: 'Santa Marta'},
+  {slug: 'pereira', name: 'Pereira'}
 ]
